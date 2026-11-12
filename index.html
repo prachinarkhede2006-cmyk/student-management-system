@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Management</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="wrap"><p class="tag">CAMPUS ADMIN</p><h1>Student Management</h1></div></header>
+<main class="wrap"><section class="intro"><div><p class="tag">STUDENT DIRECTORY</p><h2>Manage your students</h2><p class="muted">Add, view, update and remove student records.</p></div><div class="count">Total students<strong id="count">0</strong></div></section>
+<section class="panel"><h3 id="formTitle">Add a student</h3><form id="studentForm"><input id="studentId" type="hidden">
+<label>Full name<input id="name" required maxlength="100" placeholder="Aditi Sharma"></label>
+<label>Email address<input id="email" type="email" required placeholder="aditi@example.com"></label>
+<label>Course<input id="course" required maxlength="100" placeholder="Computer Engineering"></label>
+<div class="actions"><button class="primary" id="save" type="submit">Add student</button><button class="secondary hidden" id="cancel" type="button">Cancel</button></div></form><p id="message"></p></section>
+<section class="panel"><div class="heading"><div><h3>All students</h3><p class="muted">Saved student records</p></div><button class="secondary" id="refresh">Refresh</button></div>
+<div class="tablewrap"><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Actions</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<footer>Java · Spring Boot · MySQL · HTML · CSS</footer></main><script src="app.js"></script></body></html>
